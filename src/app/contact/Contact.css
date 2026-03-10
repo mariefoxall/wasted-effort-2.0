@@ -1,0 +1,30 @@
+.contact-section {
+  background-color: rgba(237, 189, 255);
+  border-radius: 10px;
+  padding: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E");
+  width: fit-content;
+  font-family: "Sen", sans-serif;
+  border: 1px solid black;
+}
+
+.email-address {
+  margin-top: 8px;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem 2rem 2rem 2rem;
+  align-items: center;
+}
+
+.contact-content {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+  height: calc(100vh - 240px);
+}

@@ -1,0 +1,31 @@
+.main-page {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem 2rem 2rem 2rem;
+  align-items: center;
+}
+
+.one-liner {
+  text-align: center;
+}
+
+.main-content {
+  margin-top: 4rem;
+  font-family: "Sen", sans-serif;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 666px) {
+  h2 {
+    max-width: 240px;
+    text-wrap: wrap;
+    text-align: center;
+  }
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  margin: 30px 0;
+  border-radius: 10px;
+}

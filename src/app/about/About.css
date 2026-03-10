@@ -1,0 +1,42 @@
+.bio-image {
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+  max-height: 70vh;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem 2rem 2rem 2rem;
+  align-items: center;
+}
+
+.bio-section {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  font-family: "Sen", sans-serif;
+  gap: 30px;
+  height: calc(100vh - 240px);
+
+  p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .bio-section {
+    display: block;
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .bio-image {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+}

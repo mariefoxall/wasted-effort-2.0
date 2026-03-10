@@ -1,66 +1,43 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 
-export default function Home() {
+export default function MainPage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div className="main-page">
+      <h2>WASTED EFFORT</h2>
+      <div className="main-content">
+        <p className="one-liner">
+          Wasted Effort is a multidisciplinary art project by Marie Foxall.{" "}
+        </p>
+        <Hello />
+        {/* <Image
+          className="main-image"
+          src={"/reproduction-interdite.jpg"}
+          alt={
+            "Window display in gallery with ceramic vases, beaded keys and carved wood & papier mache sculptures"
+          }
+          width={1458}
+          height={1000}
+        /> */}
+        <p>
+          As a self-taught artist, Marie is interested in the limits and
+          boundaries of materials. Without the constraints of classical
+          training, they enjoy finding ways to twist and subvert the traditional
+          methods of building. <br />
+          <br />
+          Applying techniques from one artistic field to another allows them to
+          continuously learn and explore the limits of every medium. Marie
+          delights in incorporating discarded materials, mixing media and toying
+          with expectations. <br />
+          <br />
+          This exploration is an ongoing dialogue about humanity’s relationship
+          to objects and the hilarious absurdity of our need to possess. Marie
+          hopes for their work to inspire humour, play, and an overwhelming
+          desire to touch.
+        </p>
+      </div>
     </div>
   );
 }
+
+import "./mainpage.css";
+import Hello from "./hello/page";
