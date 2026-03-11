@@ -10,9 +10,9 @@ function About() {
             Marie is a self-taught multi-disciplinary artist. Under the name
             Wasted Effort, their line of jewelry and housewares was sold in
             boutiques across North America for over a decade. Nowadays,
-            Marie&apos;s sculptural works in papier mache, wood, recycled
-            plastic, lucite and clay are more outsized explorations of structure
-            and form.
+            Marie&apos;s sculptural works in textile, papier mache, wood,
+            recycled plastic, lucite and clay are more outsized explorations of
+            structure and form.
             <br />
             <br />
             Their collaborative multimedia exhibition, Purgatory is a Waiting
