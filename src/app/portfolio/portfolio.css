@@ -1,10 +1,20 @@
 .swiper {
+  --swiper-theme-color: var(--foreground);
+  --swiper-pagination-color: var(--foreground);
+  --swiper-pagination-bullet-inactive-color: var(--foreground);
+  display: flex;
+  flex-direction: column;
   margin-top: 2rem;
   width: 100%;
   height: calc(100vh - 200px);
   /* max-height: 50vh; */
   flex-shrink: 1;
   overflow: hidden;
+}
+
+.swiper-wrapper {
+  flex: 1 1 auto;
+  min-height: 0;
 }
 .swiper-slide {
   display: grid;
@@ -45,6 +55,21 @@
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--foreground);
+}
+
+.portfolio-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+
+  .swiper-pagination-bullet {
+    background-color: var(--foreground);
+    opacity: 0.45;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
 }
 
 .portfolio-page {

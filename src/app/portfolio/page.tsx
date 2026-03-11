@@ -4,9 +4,10 @@ import Image from "next/image";
 
 import "./portfolio.css";
 import Swiper from "swiper";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { useEffect, useState } from "react";
 import { PortfolioSlide, portfolioMedia } from "./media";
 
@@ -14,7 +15,7 @@ function Portfolio() {
   const [mySwiper, setMySwiper] = useState<Swiper | null>(null);
   useEffect(() => {
     const mySwiper = new Swiper(".swiper", {
-      modules: [Navigation],
+      modules: [Navigation, Pagination],
       loop: true,
       direction: "horizontal",
 
@@ -24,6 +25,12 @@ function Portfolio() {
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+
+      pagination: {
+        el: ".portfolio-pagination",
+        type: "bullets",
+        clickable: true,
       },
 
       // And if we need scrollbar
@@ -75,9 +82,10 @@ function Portfolio() {
             {portfolioMedia.map((slide: PortfolioSlide) => renderSlide(slide))}
           </div>
 
-          <div className="swiper-button-prev"></div>
-          <div className="swiper-button-next"></div>
+          {/* <div className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div> */}
         </div>
+        <div className="portfolio-pagination"></div>
       </div>
     </>
   );
