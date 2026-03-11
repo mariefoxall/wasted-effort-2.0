@@ -58,10 +58,16 @@
   font-family: "SacraSpina"; /* Name your font family */
   src: url("./fonts/sacra-spina.regular.ttf"); /* Locate the .ttf file within your directory*/
 }
+
+@font-face {
+  font-family: "LoStar"; /* Name your font family */
+  src: url("./fonts/Lostar.ttf"); /* Locate the .ttf file within your directory*/
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: blanchedalmond;
   }
 }
 
@@ -135,15 +141,15 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
-  font-family: "Fender";
-  color: black;
+  font-size: 4rem;
+  font-family: "LoStar";
+  color: var(--foreground);
 }
 
 h3 {
   font-size: 2rem;
   font-family: "Sen" sans-serif;
-  color: black;
+  color: var(--foreground);
 }
 
 p {
@@ -151,7 +157,7 @@ p {
   line-height: 1.5;
   text-wrap: wrap;
   overflow-wrap: break-word;
-  color: black;
+  color: var(--foreground);
 }
 
 button:focus,

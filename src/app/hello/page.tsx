@@ -55,7 +55,7 @@ function Hello() {
 
   return (
     <>
-      <div className="home-section">
+      <div className="spinny-section">
         <svg
           className="circles"
           width="100%"
