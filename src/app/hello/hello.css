@@ -120,7 +120,7 @@
 
 .enter__text {
   position: relative;
-  font-family: "Flowstate-Outline";
+  font-family: "LoStar";
   font-size: 1.5rem;
   color: var(--color-text-button);
   text-wrap: wrap;
@@ -238,6 +238,6 @@
   }
 
   .enter__text {
-    font-size: 2vmin;
+    font-size: 3vmin;
   }
 }
