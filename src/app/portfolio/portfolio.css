@@ -6,7 +6,7 @@
   flex-direction: column;
   margin-top: 2rem;
   width: 100%;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 220px);
   /* max-height: 50vh; */
   flex-shrink: 1;
   overflow: hidden;
@@ -96,24 +96,9 @@
   }
 }
 
-.multimedia {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  overflow: hidden;
-  max-width: calc(100vw - 4rem);
-}
-
 @media only screen and (max-width: 480px) {
   .slide-description {
     max-width: 80vw;
     padding: 0 2rem;
-  }
-
-  .multimedia {
-    flex-direction: column;
-    width: 100%;
   }
 }
