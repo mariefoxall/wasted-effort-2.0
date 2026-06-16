@@ -74,7 +74,9 @@
 }
 
 .enter {
-  display: block;
+  display: grid;
+  align-content: center;
+  justify-content: center;
   border: 0;
   width: var(--dim-button);
   height: var(--dim-button);
@@ -93,6 +95,15 @@
 .enter:hover,
 .enter:active {
   outline: none;
+}
+
+.enter:focus-visible {
+  outline: none;
+}
+
+.enter:focus-visible .enter__bg {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
 }
 
 .enter__bg {
@@ -123,6 +134,7 @@
   font-family: "LoStar";
   font-size: 1.5rem;
   color: var(--color-text-button);
+  text-align: center;
   text-wrap: wrap;
   font-weight: 400;
 }
