@@ -8,6 +8,13 @@
   border: 1px solid black;
 }
 
+@media (prefers-color-scheme: dark) {
+  .contact-section {
+    background-color: #7974d6c2;
+    border: 1px solid blanchedalmond;
+  }
+}
+
 .email-address {
   margin-top: 8px;
 }
