@@ -69,7 +69,7 @@ function Portfolio() {
       const slide = portfolioMedia[instance.realIndex];
       if (slide) {
         setSlideAnnouncement(
-          `Slide ${instance.realIndex + 1} of ${portfolioMedia.length}: ${slide.title}, ${slide.year}. ${slide.description}`
+          `Slide ${instance.realIndex + 1} of ${portfolioMedia.length}: ${slide.title}, ${slide.year}. ${slide.description}`,
         );
       }
 
@@ -168,7 +168,9 @@ function Portfolio() {
             Use left and right arrow keys to move between slides.
           </p>
           <div className="swiper-wrapper">
-            {portfolioMedia.map((slide: PortfolioSlide, index: number) => renderSlide(slide, index))}
+            {portfolioMedia.map((slide: PortfolioSlide, index: number) =>
+              renderSlide(slide, index),
+            )}
           </div>
 
           {/* <div className="swiper-button-prev"></div>
