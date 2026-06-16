@@ -33,6 +33,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 @keyframes logo-spin {
@@ -59,4 +60,9 @@ header {
 .home-button:hover {
   transform: rotate(180deg);
   transform-origin: 50% 50%;
+}
+
+.home-button:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
 }

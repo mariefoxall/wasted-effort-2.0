@@ -5,11 +5,11 @@ import Link from "next/link";
 function Header() {
   return (
     <header>
-      <button className="home-button">
-        <Link className="home-link" href="/">
-          <h2 className="big-w">W</h2>{" "}
-        </Link>
-      </button>
+      <Link className="home-button home-link" href="/" aria-label="Home">
+        <span className="big-w" aria-hidden="true">
+          W
+        </span>
+      </Link>
       <Menu />
     </header>
   );

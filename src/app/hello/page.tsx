@@ -152,7 +152,11 @@ function Hello() {
           </text>
         </svg>
 
-        <button className="enter" onMouseEnter={handleMouseEnter}>
+        <button
+          className="enter"
+          onMouseEnter={handleMouseEnter}
+          aria-label="view portfolio"
+        >
           <Link href="/portfolio" className="enter-link">
             <div className="enter__bg"></div>
             <span className="enter__text">

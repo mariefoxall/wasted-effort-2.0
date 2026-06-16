@@ -1,6 +1,7 @@
 :root {
   --background: rgb(235, 250, 169);
   --foreground: #171717;
+  --focus-ring: #000;
   font-family: "Sen", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -68,6 +69,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: blanchedalmond;
+    --focus-ring: #fff;
   }
 }
 
